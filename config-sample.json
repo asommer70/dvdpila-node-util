@@ -1,0 +1,13 @@
+{
+  "server": {
+    "hostname": "greenback",
+    "archive": "/srv/Videos"
+  },
+  "dvdpila": {
+    "hostname": "dvdpila",
+    "database": "dvdpila",
+    "db_hostname": "thehoick",
+    "db_username": "adam",
+    "db_password": "awesome"
+  }
+}
