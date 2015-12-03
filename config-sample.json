@@ -1,6 +1,7 @@
 {
   "server": {
     "hostname": "tacos",
+    "username": "adam",
     "archive": "/srv/Videos"
   },
   "dvdpila": {
