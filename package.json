@@ -12,14 +12,15 @@
   "author": "Adam Sommer",
   "license": "ISC",
   "repository": {
-     "type" : "git",
-     "url" : "https://github.com/asommer70/dvdpila-node-util.git"
+    "type": "git",
+    "url": "https://github.com/asommer70/dvdpila-node-util.git"
   },
   "dependencies": {
     "commander": "^2.9.0",
     "gulp-coffee": "^2.3.1",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
-    "node-sshclient": "^0.2.0"
+    "node-sshclient": "^0.2.0",
+    "pg": "^4.4.3"
   }
 }
