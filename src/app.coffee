@@ -4,6 +4,8 @@ SSH = require('node-sshclient').SSH
 pg = require('pg')
 
 config = require('../config')
+file_dvds = require('../dvds')
+
 
 #
 # SSH to file archive and get listing.
@@ -48,8 +50,6 @@ compare_dvds = () ->
       if err
         console.error('error running query', err)
 
-      file_dvds = require('../dvds')
-
       # Get just the DVD name.
       dvds = []
       for dvd in result.rows
@@ -61,7 +61,9 @@ compare_dvds = () ->
       # Get a list of files not in DVD Pila!.
       unentered = []
       for file_dvd in file_dvds.dvds
-        if dvds.indexOf(file_dvd) == -1
+        # if not dvds.indexOf(file_dvd)
+        #   unentered.push(file_dvd)
+        if file_dvd not in dvds
           unentered.push(file_dvd)
 
       console.log(unentered)
